@@ -94,7 +94,7 @@ The `HouseholdTask` and `StudentTask` classes inherit from the abstract `Task` c
 ### 4. Polymorphism
 The `TaskFormatter` class accepts a `Task` reference and calls methods such as `getCategory()` and `getSpecificDetails()`. These methods can produce different results depending on whether the actual object is a `HouseholdTask` or a `StudentTask`.
 
-## 10. Instructions for Running
+##  Instructions for Running
 
 ### Requirements
 - Java Development Kit (JDK) installed
@@ -107,3 +107,98 @@ The `TaskFormatter` class accepts a `Task` reference and calls methods such as `
 3. Double-click `run.bat`, or run it from Command Prompt.
 4. The batch file will compile the Java source files and launch the application.
 5. If compilation fails, check that the JDK is installed and that the source files are correctly organized.
+
+
+   
+##  Sample Screenshots
+
+The following screenshots show the interface and main functionalities of the Digital Chore Checklist System. They demonstrate how users can manage their daily household chores and student responsibilities through the application.
+
+#### 11.1 Main Interface
+
+This screenshot shows the main interface of the Digital Chore Checklist System, where users can access the available task management options.
+
+![Main Interface](Screenshots/INTERFACE.png)
+
+#### 11.2 Add Task
+
+This feature allows users to add new tasks by providing the necessary task details.
+
+![Add Task](Screenshots/Add%20Task.png)
+
+#### 11.3 Task List
+
+This screenshot displays the list of saved tasks, allowing users to view and monitor their responsibilities.
+
+![Task List](Screenshots/Task%20List.png)
+
+#### 11.4 Task Status Completion
+
+This feature allows users to monitor task progress by identifying which tasks are pending and which have already been completed.
+
+![Task Status Completion](Screenshots/Task%20Status%20Completion.png)
+
+#### 11.5 Sorting Tasks and Priority
+
+This screenshot demonstrates how tasks are organized according to their sorting and priority settings.
+
+![Sorting Tasks and Priority](Screenshots/Sorting%20Tasks%20and%20Priority.png)
+
+
+##  Known Limitations
+
+The Digital Chore Checklist System has the following limitations:
+
+#### 12.1 Console-Based Application
+The system only runs as a Java console-based application and does not include a graphical user interface (GUI).
+
+#### 12.2 No User Registration or Login
+The system does not support user registration or login accounts.
+
+#### 12.3 No Automatic Notifications or Reminders
+The application does not provide automatic notifications or reminders for scheduled chores.
+
+#### 12.4 No Online Storage or Cloud Synchronization
+The system does not support online storage or cloud synchronization.
+
+#### 12.5 Limited Task Management
+The system focuses on adding, viewing, updating, deleting, and tracking daily household chores and responsibilities.
+
+##  Future Improvements
+
+The following improvements may be considered for future development to enhance the functionality and usability of the Digital Chore Checklist System.
+
+#### 13.1 Graphical User Interface (GUI)
+Develop a user-friendly graphical interface to make the application easier to navigate and use.
+
+#### 13.2 User Registration and Login
+Add user accounts and authentication to allow different household members and students to manage their own responsibilities.
+
+#### 13.3 Automatic Notifications and Reminders
+Implement notifications and reminders to help users remember their scheduled tasks and deadlines.
+
+#### 13.4 Online Storage and Cloud Synchronization
+Introduce online storage to allow users to access and synchronize their task information across multiple devices.
+
+#### 13.5 Enhanced Task Management
+Expand the system with additional task management options and functionalities to improve organization, monitoring, and productivity.
+
+##  Project Contributors
+
+The Digital Chore Checklist System was developed by Team 1, Group 1, from Section IT-2109 as part of the OOP 101 – Object-Oriented Programming course.
+
+#### 14.1 Team Members and Roles
+
+1. **Cura, Vhenice Joy D.** – Project Leader; coordinates tasks and checks project completion.
+
+2. **Springael, Lance Aixer N.** – Develops the Task class, including its attributes, constructors, and methods.
+
+3. **Jacinto, Jan Daiho M.** – Develops the TaskManager class and the add, view, update, and delete functionalities.
+
+4. **Cruzat, Marjon R.** – Develops the main menu, user input, and program flow; assists with class integration.
+
+5. **Oliva, Raquelyn Mae L.** – Handles system testing and debugging, documentation, screenshots, and presentation.
+
+#### 14.2 Acknowledgment
+
+We would like to acknowledge the contributions and efforts of every team member in planning, developing, testing, and documenting the Digital Chore Checklist System.
