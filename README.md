@@ -79,3 +79,31 @@ The Digital Chore Checklist System uses the following technologies:
 | Jacinto, Jan Daiho M. | Develops the TaskManager class and the add, view, update, and delete functionalities. |
 | Cruzat, Marjon R. | Develops the main menu, user input, and program flow; helps integrate the classes. |
 | Oliva, Raquelyn Mae L. | Tests and debugs the system; prepares documentation, screenshots, and presentation. |
+
+## OOP Concepts Demonstrated
+
+### 1. Abstraction
+The `Task` class is an abstract class that defines the common structure and behavior of tasks. It contains abstract methods such as `getCategory()` and `getSpecificDetails()`, which are implemented by its subclasses.
+
+### 2. Encapsulation
+The `Task` class uses private attributes to protect task information. Getters and setters provide controlled access to these attributes. The `TaskManager` class also manages the task list and provides methods for adding, finding, filtering, sorting, and deleting tasks.
+
+### 3. Inheritance
+The `HouseholdTask` and `StudentTask` classes inherit from the abstract `Task` class. This allows them to share common task properties and methods while providing their own specific details.
+
+### 4. Polymorphism
+The `TaskFormatter` class accepts a `Task` reference and calls methods such as `getCategory()` and `getSpecificDetails()`. These methods can produce different results depending on whether the actual object is a `HouseholdTask` or a `StudentTask`.
+
+## 10. Instructions for Running
+
+### Requirements
+- Java Development Kit (JDK) installed
+- Java compiler (`javac`) available in the system PATH
+- Windows operating system (to use `run.bat`)
+
+### Steps
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click `run.bat`, or run it from Command Prompt.
+4. The batch file will compile the Java source files and launch the application.
+5. If compilation fails, check that the JDK is installed and that the source files are correctly organized.
