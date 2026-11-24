@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="1470" viewBox="0 0 1460 1470" font-family="Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<style>
+.ttl{font-size:28px;font-weight:700;fill:#1e2a44}.sub{font-size:15px;fill:#5a6b85}
+.nm{font-size:16px;font-weight:700;fill:#1e2a44}.st{font-size:12px;fill:#5a6b85;font-style:italic}
+.mono{font-family:'DejaVu Sans Mono',Consolas,monospace;font-size:12px;fill:#1e2a44}
+.lb{font-size:12px;fill:#3b4d6b}.pill{font-size:10px;font-weight:700}
+.lg{font-size:12px;fill:#3b4d6b}
+</style>
+<rect width="1460" height="1470" fill="#ffffff"/>
+<text x="730.0" y="48" text-anchor="middle" class="ttl">DIGITAL CHORE CHECKLIST SYSTEM — UML CLASS DIAGRAM</text>
+<text x="730.0" y="74" text-anchor="middle" class="sub">Based on the classes in the project source (Java Swing, OOP team project)</text>
+<rect x="40" y="110" width="250" height="66" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="165.0" y="134" text-anchor="middle" class="nm">Main</text>
+<line x1="40" y1="144" x2="290" y2="144" stroke="#3b4d6b" stroke-width="1"/>
+<text x="52" y="161" class="mono">+main(args: String[]): void</text>
+<rect x="40" y="250" width="250" height="50" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="165.0" y="266" text-anchor="middle" class="st">&lt;&lt;javax.swing&gt;&gt;</text>
+<text x="165.0" y="286" text-anchor="middle" class="nm">JFrame</text>
+<rect x="370" y="110" width="560" height="312" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="650.0" y="126" text-anchor="middle" class="st">&lt;&lt;GUI&gt;&gt;</text>
+<text x="650.0" y="146" text-anchor="middle" class="nm">DigitalChoreChecklistApp</text>
+<line x1="370" y1="160" x2="930" y2="160" stroke="#3b4d6b" stroke-width="1"/>
+<text x="382" y="177" class="mono">-manager: TaskManager</text>
+<text x="382" y="195" class="mono">-formatter: TaskFormatter</text>
+<text x="382" y="213" class="mono">-categoryFilter: String</text>
+<text x="382" y="231" class="mono">-priorityFilter: String</text>
+<text x="382" y="249" class="mono">-priorityView: boolean</text>
+<text x="382" y="267" class="mono">-tableModel: DefaultTableModel</text>
+<line x1="370" y1="282" x2="930" y2="282" stroke="#3b4d6b" stroke-width="1"/>
+<text x="382" y="299" class="mono">+DigitalChoreChecklistApp()</text>
+<text x="382" y="317" class="mono">-buildUi(), buildSidebar(), buildTableCard()</text>
+<text x="382" y="335" class="mono">-selectCategory(String), selectPriorityView()</text>
+<text x="382" y="353" class="mono">-showTaskDialog(Task), buildTaskForm(Task)</text>
+<text x="382" y="371" class="mono">-editSelected(), toggleSelected(), deleteSelected()</text>
+<text x="382" y="389" class="mono">-refreshTable(), updateStats(), countOverdue()</text>
+<text x="382" y="407" class="mono">-showProgressDialog(), buildProgressPanel()</text>
+<rect x="1030" y="110" width="400" height="136" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="1230.0" y="126" text-anchor="middle" class="st">&lt;&lt;inner classes&gt;&gt;</text>
+<text x="1230.0" y="146" text-anchor="middle" class="nm">UI Components</text>
+<line x1="1030" y1="160" x2="1430" y2="160" stroke="#3b4d6b" stroke-width="1"/>
+<text x="1042" y="177" class="mono">RoundedPanel, RoundButton, NavItem</text>
+<text x="1042" y="195" class="mono">RateBar, HintTextField, BrandMark</text>
+<text x="1042" y="213" class="mono">DotIcon, PriorityListRenderer</text>
+<text x="1042" y="231" class="mono">TextCellRenderer, BadgeRenderer, HeaderRenderer</text>
+<rect x="40" y="540" width="340" height="84" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="210.0" y="564" text-anchor="middle" class="nm">TaskFormatter</text>
+<rect x="281.6" y="548" width="90.4" height="17" rx="8.5" fill="#fce7f3"/>
+<text x="326.8" y="560" text-anchor="middle" class="pill" fill="#9d174d">Polymorphism</text>
+<line x1="40" y1="574" x2="380" y2="574" stroke="#3b4d6b" stroke-width="1"/>
+<text x="52" y="591" class="mono">+formatSpecificDetails(task: Task): String</text>
+<text x="52" y="609" class="mono">+formatCategory(task: Task): String</text>
+<rect x="1030" y="470" width="400" height="296" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="1230.0" y="494" text-anchor="middle" class="nm">TaskManager</text>
+<rect x="1325.4" y="478" width="96.60000000000001" height="17" rx="8.5" fill="#dbeafe"/>
+<text x="1373.7" y="490" text-anchor="middle" class="pill" fill="#1e40af">Encapsulation</text>
+<line x1="1030" y1="504" x2="1430" y2="504" stroke="#3b4d6b" stroke-width="1"/>
+<text x="1042" y="521" class="mono">-taskList: Task[100]</text>
+<text x="1042" y="539" class="mono">-taskCount: int</text>
+<text x="1042" y="557" class="mono">-nextId: int</text>
+<line x1="1030" y1="572" x2="1430" y2="572" stroke="#3b4d6b" stroke-width="1"/>
+<text x="1042" y="589" class="mono">+getNextId(): int</text>
+<text x="1042" y="607" class="mono">+addTask(task: Task): boolean</text>
+<text x="1042" y="625" class="mono">+getAllTasks(): List&lt;Task&gt;</text>
+<text x="1042" y="643" class="mono">+getTasksByCategory(String): List&lt;Task&gt;</text>
+<text x="1042" y="661" class="mono">+getFilteredTasks(String, String): List&lt;Task&gt;</text>
+<text x="1042" y="679" class="mono">+getTasksSortedByPriority(String, String)</text>
+<text x="1042" y="697" class="mono">+findTaskById(id: int): Task</text>
+<text x="1042" y="715" class="mono">+deleteTask(id: int): boolean</text>
+<text x="1042" y="733" class="mono">+getTaskCount(), getCompletedCount()</text>
+<text x="1042" y="751" class="mono">+getPendingCount(), getCompletionRate()</text>
+<rect x="410" y="700" width="500" height="330" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="660.0" y="716" text-anchor="middle" class="st">&lt;&lt;abstract&gt;&gt;</text>
+<text x="660.0" y="736" text-anchor="middle" class="nm">Task</text>
+<rect x="817.8" y="708" width="84.2" height="17" rx="8.5" fill="#fef3c7"/>
+<text x="859.9" y="720" text-anchor="middle" class="pill" fill="#92400e">Abstraction</text>
+<line x1="410" y1="750" x2="910" y2="750" stroke="#3b4d6b" stroke-width="1"/>
+<text x="422" y="767" class="mono">-taskId: int  {final}</text>
+<text x="422" y="785" class="mono">-taskName: String</text>
+<text x="422" y="803" class="mono">-description: String</text>
+<text x="422" y="821" class="mono">-dueDate: LocalDate</text>
+<text x="422" y="839" class="mono">-status: String</text>
+<text x="422" y="857" class="mono">-priority: String</text>
+<text x="422" y="875" class="mono">+HIGH, MEDIUM, LOW: String  {static final}</text>
+<line x1="410" y1="890" x2="910" y2="890" stroke="#3b4d6b" stroke-width="1"/>
+<text x="422" y="907" class="mono">+getters / setters (name, description, dueDate, priority)</text>
+<text x="422" y="925" class="mono">+getTaskId(): int, getStatus(): String</text>
+<text x="422" y="943" class="mono">+markAsCompleted(), markAsPending()</text>
+<text x="422" y="961" class="mono">+getPriorityRank(): int</text>
+<text x="422" y="979" class="mono">+getDetails(): String</text>
+<text x="422" y="997" class="mono" font-style="italic">+getCategory(): String  {abstract}</text>
+<text x="422" y="1015" class="mono" font-style="italic">+getSpecificDetails(): String  {abstract}</text>
+<rect x="290" y="1120" width="340" height="152" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="460.0" y="1144" text-anchor="middle" class="nm">HouseholdTask</text>
+<rect x="537.8" y="1128" width="84.2" height="17" rx="8.5" fill="#dcfce7"/>
+<text x="579.9" y="1140" text-anchor="middle" class="pill" fill="#166534">Inheritance</text>
+<line x1="290" y1="1154" x2="630" y2="1154" stroke="#3b4d6b" stroke-width="1"/>
+<text x="302" y="1171" class="mono">-area: String</text>
+<line x1="290" y1="1186" x2="630" y2="1186" stroke="#3b4d6b" stroke-width="1"/>
+<text x="302" y="1203" class="mono">+HouseholdTask(…, area, priority)</text>
+<text x="302" y="1221" class="mono">+getArea(): String, setArea(String)</text>
+<text x="302" y="1239" class="mono">+getCategory(): String</text>
+<text x="302" y="1257" class="mono">+getSpecificDetails(): String</text>
+<rect x="690" y="1120" width="340" height="188" rx="6" fill="#f1f5fb" stroke="#3b4d6b" stroke-width="2"/>
+<text x="860.0" y="1144" text-anchor="middle" class="nm">StudentTask</text>
+<rect x="937.8" y="1128" width="84.2" height="17" rx="8.5" fill="#dcfce7"/>
+<text x="979.9" y="1140" text-anchor="middle" class="pill" fill="#166534">Inheritance</text>
+<line x1="690" y1="1154" x2="1030" y2="1154" stroke="#3b4d6b" stroke-width="1"/>
+<text x="702" y="1171" class="mono">-subject: String</text>
+<text x="702" y="1189" class="mono">-type: String</text>
+<line x1="690" y1="1204" x2="1030" y2="1204" stroke="#3b4d6b" stroke-width="1"/>
+<text x="702" y="1221" class="mono">+StudentTask(…, subject, type, priority)</text>
+<text x="702" y="1239" class="mono">+getSubject(), getType()</text>
+<text x="702" y="1257" class="mono">+setSubject(String), setType(String)</text>
+<text x="702" y="1275" class="mono">+getCategory(): String</text>
+<text x="702" y="1293" class="mono">+getSpecificDetails(): String</text>
+<path d="M290,140 L370,140" fill="none" stroke="#5a6b85" stroke-width="1.6" stroke-dasharray="6 4"/>
+<path d="M359,146 L370,140 L359,134" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="330.0" y="132" text-anchor="middle" class="lb">creates</text>
+<path d="M370,275.0 L306,275.0" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<polygon points="290,275.0 306,266.0 306,284.0" fill="#fff" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="338.0" y="267.0" text-anchor="middle" class="lb">extends</text>
+<polygon points="930,170 941,176 952,170 941,164" fill="#5a6b85" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M952,170 L1030,170" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="990.0" y="162" text-anchor="middle" class="lb">contains</text>
+<path d="M460,422 L460,452 L210.0,452 L210.0,540" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M204.0,529 L210.0,540 L216.0,529" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="335.0" y="445" text-anchor="middle" class="lb">formats details with</text>
+<path d="M860,422 L860,477 L1230.0,477 L1230.0,470" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M1224.0,459 L1230.0,470 L1236.0,459" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="970" y="470" text-anchor="middle" class="lb">manages tasks via</text>
+<path d="M620.0,422 L620.0,700" fill="none" stroke="#5a6b85" stroke-width="1.6" stroke-dasharray="6 4"/>
+<path d="M614.0,689 L620.0,700 L626.0,689" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="628.0" y="542" text-anchor="start" class="lb">uses</text>
+<path d="M210.0,624 L210.0,770 L410,770" fill="none" stroke="#5a6b85" stroke-width="1.6" stroke-dasharray="6 4"/>
+<path d="M399,776 L410,770 L399,764" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="218.0" y="670" text-anchor="start" class="lb">formats</text>
+<polygon points="1120,766 1114,777 1120,788 1126,777" fill="#fff" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M1120,788 L1120,900 L910,900" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M921,894 L910,900 L921,906" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="1128" y="810" text-anchor="start" class="lb">0..100 tasks</text>
+<text x="918" y="892" text-anchor="start" class="lb">stores</text>
+<path d="M460.0,1120 L460.0,1075 L660.0,1075" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M860.0,1120 L860.0,1075 L660.0,1075.01 L660.0,1046" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<polygon points="660.0,1030 669.0,1046 651.0,1046" fill="#fff" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="452.0" y="1067" text-anchor="end" class="lb">extends</text>
+<text x="868.0" y="1067" text-anchor="start" class="lb">extends</text>
+<rect x="40" y="1381" width="760" height="62" rx="6" fill="#fff" stroke="#c9d3e3"/>
+<text x="52" y="1399" class="nm" style="font-size:13px">Legend</text>
+<path d="M54,1421 L100,1421" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<polygon points="54,1421 70,1412 70,1430" fill="#fff" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="110" y="1425" class="lg">inheritance</text>
+<path d="M210,1421 L256,1421" fill="none" stroke="#5a6b85" stroke-width="1.6" stroke-dasharray="6 4"/>
+<path d="M245,1427 L256,1421 L245,1415" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="266" y="1425" class="lg">dependency (uses)</text>
+<polygon points="410,1421 421,1427 432,1421 421,1415" fill="#fff" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M432,1421 L460,1421" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="470" y="1425" class="lg">aggregation</text>
+<polygon points="570,1421 581,1427 592,1421 581,1415" fill="#5a6b85" stroke="#5a6b85" stroke-width="1.6"/>
+<path d="M592,1421 L620,1421" fill="none" stroke="#5a6b85" stroke-width="1.6"/>
+<text x="630" y="1425" class="lg">composition</text>
+<text x="740" y="1425" class="lg" font-style="italic" style="font-style:italic">italic = abstract</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3MWE2NWJlOS00MTkwLTQxMGMtODUzMi0xMGE2M2Y3ZGRjMDcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaAFQfH3P+fhDFzi1Xj+waVQAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiNTk3YmIzYS1hNGQ4LTQ5MmYtYmUxMi04YjFkOGNiODEzMmNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNorFoLwJ2sx9kXVWG5oDKL5QAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggxNQDfERfpq+RINsnjB0ZACWqbL5K4PorEaXNVUxw5D6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaBudwSRtQxR4QYsYFl4EPkEAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFls/3gcWurVbElC+v0DinEFMCyXfKSa3UpKZ3v7ok7fZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTM6Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjcxYTY1YmU5LTQxOTAtNDEwYy04NTMyLTEwYTYzZjdkZGMwNy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjkyMmJlMDAyLWMyMGItNGI2YS04MDZiLTQxZjU0N2E1ZjVhZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDE1AN8RF+mr5Eg2yeMHRkAJapsvkrg+isRpc1VTHDkPqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggCOJEsDkCIdqz7AqzKRq7xD2rMld9qZrsvQBco94SxyCiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggXcG0WW8kfw7/Ut83mo5WaUjTrSPmmB+ZQ5TlumJpZLF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQPaj2v0VgoBxf75mdBXEkPPK8mUSHWFK3iKrTj3i80kR9iZWOg1z7/pw15+CTAzjptFiBtTqxAqR+ZCdWJDHLPA=</c2pa:manifest></metadata></svg>
