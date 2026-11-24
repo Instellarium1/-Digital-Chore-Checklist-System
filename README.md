@@ -82,17 +82,151 @@ The Digital Chore Checklist System uses the following technologies:
 
 ## OOP Concepts Demonstrated
 
-### 1. Abstraction
-The `Task` class is an abstract class that defines the common structure and behavior of tasks. It contains abstract methods such as `getCategory()` and `getSpecificDetails()`, which are implemented by its subclasses.
 
-### 2. Encapsulation
-The `Task` class uses private attributes to protect task information. Getters and setters provide controlled access to these attributes. The `TaskManager` class also manages the task list and provides methods for adding, finding, filtering, sorting, and deleting tasks.
+####  OOP Concepts Demonstrated
 
-### 3. Inheritance
-The `HouseholdTask` and `StudentTask` classes inherit from the abstract `Task` class. This allows them to share common task properties and methods while providing their own specific details.
+The Digital Chore Checklist System demonstrates the fundamental Object-Oriented Programming (OOP) concepts through its classes, objects, attributes, and methods.
 
-### 4. Polymorphism
-The `TaskFormatter` class accepts a `Task` reference and calls methods such as `getCategory()` and `getSpecificDetails()`. These methods can produce different results depending on whether the actual object is a `HouseholdTask` or a `StudentTask`.
+#### 1. Encapsulation
+
+Encapsulation is implemented by keeping the attributes of each task private and accessing or modifying them through public getter and setter methods. This protects task information from unauthorized or unintended changes.
+
+```java
+public class Task {
+    private String taskName;
+    private String description;
+    private String dueDate;
+    private String status;
+
+    public String getTaskName() {
+        return taskName;
+    }
+
+    public void setTaskName(String taskName) {
+        this.taskName = taskName;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+}
+```
+
+#### 2. Inheritance
+
+Inheritance is demonstrated through the `HouseholdTask` and `StudentTask` classes, which extend the parent `Task` class. They inherit common task attributes and methods while having their own specific properties.
+
+```java
+public class HouseholdTask extends Task {
+    private String area;
+    private String priority;
+}
+
+public class StudentTask extends Task {
+    private String subject;
+    private String type;
+}
+```
+
+#### 3. Polymorphism
+
+Polymorphism allows different types of tasks to use the same method name but provide different implementations. For example, household tasks and student tasks can display their own task details by overriding the `getDetails()` method.
+
+```java
+public class Task {
+    public String getDetails() {
+        return "General Task Information";
+    }
+}
+
+public class HouseholdTask extends Task {
+    @Override
+    public String getDetails() {
+        return "Household Task Information";
+    }
+}
+
+public class StudentTask extends Task {
+    @Override
+    public String getDetails() {
+        return "Student Task Information";
+    }
+}
+```
+
+#### 4. Abstraction
+
+Abstraction is demonstrated through the `TaskManager` class, which provides simple methods for managing tasks while hiding the internal processes involved in adding, viewing, updating, and deleting tasks.
+
+```java
+public class TaskManager {
+
+    public void addTask(Task task) {
+        // Handles adding a task
+    }
+
+    public void viewAllTasks() {
+        // Handles displaying all tasks
+    }
+
+    public void updateTask(int index) {
+        // Handles updating a task
+    }
+
+    public void deleteTask(int index) {
+        // Handles deleting a task
+    }
+}
+```
+
+#### 5. Classes and Objects
+
+The system uses classes as blueprints for creating objects. Each task is represented by a `Task`, `HouseholdTask`, or `StudentTask` object containing its own information.
+
+```java
+HouseholdTask household = new HouseholdTask();
+StudentTask student = new StudentTask();
+```
+
+#### 6. Methods
+
+Methods are used to perform the different operations of the system, including adding, viewing, updating, deleting, and marking tasks as completed.
+
+```java
+taskManager.addTask(task);
+taskManager.viewAllTasks();
+taskManager.updateTask(index);
+taskManager.deleteTask(index);
+```
+
+#### 7. Exception Handling
+
+Exception handling helps prevent the program from terminating unexpectedly when users enter invalid information or make incorrect menu selections.
+
+```java
+try {
+    int choice = scanner.nextInt();
+} catch (Exception e) {
+    System.out.println("Invalid input. Please try again.");
+}
+```
+
+#### 8. Arrays and Data Handling
+
+The system uses an array of `Task` objects to store and organize household and academic tasks. This allows the application to access, display, search, update, and manage the checklist.
+
+```java
+Task[] tasks = new Task[100];
+int taskCount = 0;
+
+tasks[taskCount] = new HouseholdTask();
+taskCount++;
+```
+
 
 ##  Instructions for Running
 
