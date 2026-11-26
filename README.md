@@ -1,23 +1,23 @@
 # Digital-Chore-Checklist-System
 **Description:** Development of a Java-based Digital Chore Checklist System for Monitoring Household Members and Student Responsibilities
 ## Project Description
- Managing household chores and student responsibilities can be challenging, especially when multiple people have their own routines and tasks for the day. Some people usually forget their tasks because of their busy schedules, time management, and poor organization. Methods such as written checklists tend to be more difficult to manage because people sometimes forget what they have already done and what they still need to accomplish.
+Managing household chores and student responsibilities can be challenging, especially when multiple people have their own routines and tasks for the day. Some people usually forget their tasks because of their busy schedules, time management, and poor organization. Methods such as written checklists tend to be more difficult to manage because people sometimes forget what they have already done and what they still need to accomplish.
 
 The proposed system aims to provide convenient and organized daily task management, where users can monitor and familiarize themselves with their progress and responsibilities. It fosters accountability and encourages household members and students to establish better management habits.
  
 
 
 ## Problem being address
-The project addresses the difficulties in managing household chores and student responsibilities, particularly when individuals have multiple tasks and busy daily schedules.
+- **The project addresses the difficulties in managing household chores and student responsibilities, particularly when individuals have multiple tasks and busy daily schedules.**
 
-The use of traditional written checklists can make task management difficult because users may forget their completed tasks and the responsibilities they still need to accomplish.
+- **The use of traditional written checklists can make task management difficult because users may forget their completed tasks and the responsibilities they still need to accomplish.**
 
-The system aims to address these problems by providing a digital checklist for organizing, monitoring, and managing daily responsibilities.
+- **The system aims to address these problems by providing a digital checklist for organizing, monitoring, and managing daily responsibilities.**
 
 
 ## Project Objectives
 ### General Objective:
- To develop a Java-based Digital Chore Checklist System for monitoring household members' and students' daily responsibilities.
+To develop a Java-based Digital Chore Checklist System for monitoring household members' and students' daily responsibilities.
 
 #### Specific Objectives:
 
@@ -70,7 +70,7 @@ The Digital Chore Checklist System uses the following technologies:
 - **Java Programming Language** – Used to develop the system and implement its functionalities.
 - **Object-Oriented Programming (OOP)** – Used to organize the program through classes, objects, methods, and OOP principles.
 - **GitHub** – Used as the source code repository and for project collaboration.
-  ## 8. Team Members and Roles
+  ##  Team Members and Roles
 
 | Team Member | Role and Responsibilities |
 |---|---|
