@@ -70,15 +70,17 @@ The Digital Chore Checklist System uses the following technologies:
 - **Java Programming Language** – Used to develop the system and implement its functionalities.
 - **Object-Oriented Programming (OOP)** – Used to organize the program through classes, objects, methods, and OOP principles.
 - **GitHub** – Used as the source code repository and for project collaboration.
-  ##  Team Members and Roles
 
-| Team Member | Role and Responsibilities |
-|---|---|
-| Cura, Vhenice Joy D. | Project Leader – Coordinates team activities and monitors project completion. |
-| Springael, Lance Aixer N. | Develops the Task class, including its attributes, constructors, and methods. |
-| Jacinto, Jan Daiho M. | Develops the TaskManager class and the add, view, update, and delete functionalities. |
-| Cruzat, Marjon R. | Develops the main menu, user input, and program flow; helps integrate the classes. |
-| Oliva, Raquelyn Mae L. | Tests and debugs the system; prepares documentation, screenshots, and presentation. |
+
+## Team Members and Roles
+
+| Team Member | GitHub Username | Role |
+|---|---|---|
+| CRUZAT, MARJON R. | cruzatmarjon | System/Design |
+| CURA, VENHICE JOY D. | curavhenice | Project Leader |
+| OLIVA, RAQUELYN MAE L. | olivaraquelynmae | Documentation |
+| JACINTO, JAN DAIHO M. | Instellarium1 | Lead Programmer |
+| SPRINGAEL, LANCE AIXER N. | Joy2dworldd | System/Design |
 
 ## OOP Concepts Demonstrated
 
